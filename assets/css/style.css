@@ -242,6 +242,7 @@ form {
 
 .red:hover {
     background-color: #ff4545;
+    cursor: pointer;
 }
 
 .btn:link {
