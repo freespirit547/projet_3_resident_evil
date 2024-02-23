@@ -1,9 +1,7 @@
 
 body {
     font-family: 'Roboto', sans-serif;
-    margin-right: 0;
-    margin-bottom: 0;
-    margin-left: 0;
+    margin: 0;
 }
 
 
@@ -11,18 +9,32 @@ body {
 .navbar {
     display: flex;
     justify-content: space-evenly;
+    align-items: center;
     list-style: none;
-    margin: 30px 480px 30px 480px;
+    margin: 0 480px 0 480px;
+    height: 80px;
+}
+
+.navbar .separator {
+    border-right: 1px solid black;
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 20px;
 }
 
 .navbar a:link {
-    color: black;
+    color: black;font-size: large;
     font-weight: bold;
     text-decoration: none;
 }
 
 .navbar a:visited {
-    color: black;
+    color: rgb(100, 100, 100);
+}
+
+.navbar a:hover {
+    background-color: #282725;
+    color: white;
 }
 /*fin nav*/
 
@@ -151,11 +163,7 @@ form {
 /*boîte legal*/
 .legal {
     background-color:#000000;
-    display: grid;
-    grid-template-columns: 1fr 5fr;
-    grid-template-rows: 1fr;
-    /*padding-right: 80px;
-    padding-left: 80px;*/
+    display: flex;
 }
 
 /*boîte legal logo*/
@@ -165,50 +173,35 @@ form {
     background-image: url(../img/Resident_Evil_4_Logo_Light_Outlined.png);
     background-size: cover;
     background-position: center;
-    grid-column-start: 1;
-    justify-self: center;
-    align-self: center;
+    margin: auto;
 }
 
 /*boîte legal links*/
 
-/*
-.ftr_links a:link {
+.ftr_links {
+    font-size: small;
+    margin-right: 150px;
+    margin-left: 150px;
+    display: flex;
+}
+
+.ftr_links .separator {
+    border-right: 1px solid white;
+    margin-right: 15px;
+    margin-left: 15px;
+    height: 20px;
+}
+
+.ftr_links li a:link {
     color: white;
     text-decoration: none;
 }
 
-.ftr_links a:visited {
+.ftr_links li a:visited {
     color: white;
-}
-*/
-
-.ftr_links {
-    grid-column: 2 / 3;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr;
+    text-decoration: none;
 }
 
-.a {
-    grid-column-start: 1;
-}
-
-.b {
-    grid-column: 2 /3;
-}
-
-.c {
-    grid-column: 3 / 4;
-}
-
-.d {
-    grid-column: 4 / 5;
-}
-
-.e {
-    grid-column: 5 / 6;
-}
 
 /*fin footer*/
 
