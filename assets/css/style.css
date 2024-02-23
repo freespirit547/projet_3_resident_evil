@@ -36,6 +36,13 @@ body {
     background-color: #282725;
     color: white;
 }
+
+.navbar a:active {
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    text-decoration: none;
+}
 /*fin nav*/
 
 
@@ -162,8 +169,10 @@ form {
 
 /*boîte legal*/
 .legal {
+    height: 40px;
     background-color:#000000;
     display: flex;
+    align-items: center;
 }
 
 /*boîte legal logo*/
@@ -192,17 +201,26 @@ form {
     height: 20px;
 }
 
-.ftr_links li a:link {
+.ftr_links a:link {
     color: white;
     text-decoration: none;
 }
 
-.ftr_links li a:visited {
+.ftr_links a:visited {
     color: white;
     text-decoration: none;
 }
 
+.ftr_links a:hover {
+    background-color: white;
+    color: black;
+    text-decoration: none;
+}
 
+.ftr_links a:active {
+    color: white;
+    text-decoration: none;
+}
 /*fin footer*/
 
 
@@ -222,6 +240,10 @@ form {
     align-items: center;
 }
 
+.red:hover {
+    background-color: #ff4545;
+}
+
 .btn:link {
     color: white;
     font-size: medium;
@@ -229,7 +251,15 @@ form {
 }
 
 .btn:visited {
-    color: white;
+    color: #292B2C;
     font-size: medium;
     text-decoration: none;
+}
+
+.btn:hover {
+    color: white;
+}
+
+.btn:active {
+    color: white;
 }
